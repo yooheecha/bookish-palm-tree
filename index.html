@@ -75,13 +75,32 @@ table {
 	border-spacing: 0;
     }
 
+    body {
+        background-color: tan;
+    }
+
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+    body {
+        background-color: #62c2ea;
+  }
+    }
+
+/* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+    body {
+        background-color: #62c2ea;
+    }
+    }
+
 
     .moving {
         display: inline-block;
-        width: 6vw;
+        width: 90px;
         align-items: center;
         margin-top: 5px;
         margin-left: 5px;
+        mix-blend-mode: darken;
         animation: mymove 7s;
     }
 
@@ -92,6 +111,27 @@ table {
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+    }
+
+    @media screen and (max-width: 992px) {
+    .title {
+        margin-top: 50vh;
+        font-family: 'Open Sans', sans-serif;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+  }
+    }
+
+/* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+    .title {
+        margin-top: 30vh;
+        font-family: 'Open Sans', sans-serif;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
     }
 
     .wrap {
@@ -115,7 +155,7 @@ table {
 
     .intro {
         align-items: flex-end;
-        font-size: 3.5vw;
+        font-size: 45px;
         margin-top: -10%;
     }
 
@@ -209,6 +249,40 @@ table {
         animation: mymove 4s ;
     }
 
+    @media screen and (max-width: 992px) {
+    .image {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0%;
+        transition: 0.3s;
+        animation: mymove 4s ;
+    }
+    }
+
+/* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+    .image {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0%;
+        transition: 0.3s;
+        animation: mymove 4s ;
+    }
+    }
+    }
+
     .image:hover {
         width: 83%;
         cursor: url('CS.png'), auto;
@@ -222,7 +296,7 @@ table {
         text-align: center;
         color: #62c2ea;
         font-family: 'Open Sans', sans-serif;
-        font-size: 3.5vw;
+        font-size: 45px;
         margin-top: 4%;
         animation: mymove 2s ;
     }
