@@ -88,6 +88,17 @@ table {
         mix-blend-mode: darken;
     }
 
+    @media screen and (max-width: 600px) {
+    .moving {
+        display: inline-block;
+        width: 10vh;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 5px;
+        mix-blend-mode: darken;
+    }
+    }
+
 
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
@@ -295,7 +306,6 @@ table {
     }
 
     .issue {
-        margin-top:-50%;
         margin-left: auto;
         margin-left: auto;
         text-align: center;
@@ -305,12 +315,16 @@ table {
         margin-top: 4%;
         animation: mymove 2s ;
     }
+    
+    
 
 
     .highlight {
         margin-top:-30%;
         background-color: #4d2c1a; 
     }
+
+    
 
     .issue a {
         text-decoration: none;
