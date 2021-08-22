@@ -15,7 +15,7 @@
     <div class="title"><a href="index.html"><img class="moving" src="logo3.gif"></a>
     <id class="intro"><span class="des">Zine is a magazine focused on communicating, archiving, and researching overlooked voices through collaboration.</span></id></h1></div>
     <a href="corridor01.html"><div class="main"><img class="image" src="logo.png"></a></div>
-    <div class="issue"><span class="highlight">Issue Zero: Morning</span></div>
+    <div class="issue"><span class="highlight"><a href="corridor01.html">Issue Zero: Morning</a></span></div>
     
     <div class="foot">
         <div class="email"><div class="mail1">contact</div><div class="mail2"><a class="blue" href="mailto: soupzine@gmail.com">soupzine[at]gmail.com</a></div></div>
@@ -79,10 +79,20 @@ table {
         background-color: tan;
     }
 
+    .moving {
+        display: inline-block;
+        width: 90px;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 5px;
+        mix-blend-mode: darken;
+    }
+
+
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
     body {
-        background-color: #62c2ea;
+        background-color: #4d2c1a;
   }
     }
 
@@ -91,17 +101,6 @@ table {
     body {
         background-color: #62c2ea;
     }
-    }
-
-
-    .moving {
-        display: inline-block;
-        width: 90px;
-        align-items: center;
-        margin-top: 5px;
-        margin-left: 5px;
-        mix-blend-mode: darken;
-        animation: mymove 7s;
     }
 
 
@@ -111,26 +110,29 @@ table {
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+        font-size: 5.5vh;
     }
 
     @media screen and (max-width: 992px) {
     .title {
-        margin-top: 50vh;
+        top: 0;
         font-family: 'Open Sans', sans-serif;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+        font-size: 6vh;
   }
     }
 
 /* On screens that are 600px or less, set the background color to olive */
     @media screen and (max-width: 600px) {
     .title {
-        margin-top: 30vh;
+        margin-top: 65%;
         font-family: 'Open Sans', sans-serif;
         margin-right: auto;
         margin-left: auto;
         text-align: center;
+        font-size: 5vh;
     }
     }
 
@@ -155,7 +157,6 @@ table {
 
     .intro {
         align-items: flex-end;
-        font-size: 45px;
         margin-top: -10%;
     }
 
@@ -255,11 +256,11 @@ table {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 80%;
+        width: 90%;
         left: 0;
         right: 0;
         text-align: center;
-        top: 0%;
+        top: 40vh;
         transition: 0.3s;
         animation: mymove 4s ;
     }
@@ -276,7 +277,7 @@ table {
         left: 0;
         right: 0;
         text-align: center;
-        top: 0%;
+        top: 5%;
         transition: 0.3s;
         animation: mymove 4s ;
     }
@@ -304,7 +305,13 @@ table {
 
     .highlight {
         margin-top:-30%;
-        background-color: #4d2c1a; }
+        background-color: #4d2c1a; 
+    }
+
+    .issue a {
+        text-decoration: none;
+        color: #62c2ea;
+    }
 
     .insta1 {
         padding: 10px;
