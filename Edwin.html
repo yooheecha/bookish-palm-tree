@@ -13,7 +13,7 @@
 <body>
     <div class="header">
     <div class="title">Research</div>
-    <div class="tInterview">Interview with Erdwin Sander</div></div>
+    <div class="tInterview">Interview with Edwin Sander</div></div>
     <div class="arrow"><a href="index2.html">☜</a></div>
     <div class="interview"><img class="content-image" src="edwin-1.png"><img class="content-image" src="edwin-2.png"><img class="content-image" src="edwin-3.png"><img class="content-image" src="edwin-4.png"><img class="content-image" src="edwin-5.png"><img class="content-image" src="edwin-6.png"><img class="content-image" src="edwin-7.png">
         
@@ -98,8 +98,17 @@ table {
         margin-left: 5px;
     }
 
+    @media screen and (max-width: 992px) {
+    .arrow {
+        font-size: 0vh;
+        margin-left: 1vw;
+        margin-top: 10vh;
+    }
+    }
+
+
+
     .header {
-        background-color: white;
         display: inline-block;
         position: fixed;
         left: 0;
@@ -137,6 +146,18 @@ table {
         margin-right: 5vw;
         line-height: 1.3em;
 
+    }
+
+    @media screen and (max-width: 992px) {
+    .interview {
+        margin-top: 12vh;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        line-height: 1.3em;
+    }
     }
 
     .content-image {

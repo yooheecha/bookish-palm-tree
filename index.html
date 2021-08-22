@@ -15,6 +15,7 @@
     <div class="title"><a href="index.html"><img class="moving" src="logo3.gif"></a>
     <id class="intro"><span class="des">Zine is a magazine focused on communicating, archiving, and researching overlooked voices through collaboration.</span></id></h1></div>
     <a href="corridor01.html"><div class="main"><img class="image" src="logo.png"></a></div>
+    <a href="corridor01.html"><div class="main"><img class="image-2" src="logo3.gif"></a></div>
     <div class="issue"><span class="highlight"><a href="corridor01.html">Issue Zero: Morning</a></span></div>
     
     <div class="foot">
@@ -212,17 +213,6 @@ table {
         cursor: url('CS.png'), auto;
     }
 
-    @keyframes showup {
-        from {
-            opacity: 0%;
-        }
-
-        to {
-            opacity: 100%;
-        }
-    }
-
-
 
     .instagram {
         padding-top:1vh;
@@ -265,8 +255,12 @@ table {
         cursor: url('CS.png'), auto;
     }
 
+    .image-2 {
+        display: none;
+    }
+
     @media screen and (max-width: 992px) {
-    .image {
+    .image-2 {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
@@ -277,27 +271,16 @@ table {
         text-align: center;
         top: 5%;
         transition: 0.3s;
-        animation: mymove 4s ;
+        mix-blend-mode: darken;
     }
     }
 
-/* On screens that are 600px or less, set the background color to olive */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 992px) {
     .image {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 80%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        top: 5%;
-        transition: 0.3s;
-        animation: mymove 4s ;
+        display: none;
     }
     }
-    }
+
 
     .image:hover {
         width: 83%;
