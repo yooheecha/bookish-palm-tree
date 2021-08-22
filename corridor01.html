@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="corridor">
-    <a href="corridor02.html"><img class="BG" src="BG-blue.png"></a>
-    <a href="corridor02.html"><div class="main"><img class="image" src="BG-corridor.png"></a></div>
-    </div>
+    <div class="wrap">
+    <a href="corridor02.html"><image class="image" src="BG-blue.png"></a>
     <div class="foot">
         <div class="email"><div class="mail1">contact</div><div class="mail2"><a class="blue" href="mailto: soupzine@gmail.com">soupzine[at]gmail.com</a></div></div>
         <div class="instagram">instagram<br><a class="blue" href="https://www.instagram.com/soup.zine/">@soup.zine</a></div>
-        <div class="support"><div class="insta1">Support Us</div><div class="insta2"></div>
+        <div class="support"><div class="insta1"><a class="blue" href="SupportUs.html">Support Us</a></div><div class="insta2"></div>
+        </div>
         </div>
         </div>
 </body>
@@ -75,6 +74,21 @@ table {
         left: 0;
         bottom: 0;
         height: 100%;
+
+
+
+    }
+
+    .wrap {
+        background-image: url("BG-corridor.png");
+        text-align: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-left: auto;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        animation: mymove 3s;
 
     }
 
@@ -189,6 +203,7 @@ table {
         left: 0;
         right: 0;
         text-align: center;
+        animation: mymove 2s;
     }
 
     .BG {
