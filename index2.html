@@ -13,20 +13,20 @@
 <body>
     <div class="wrap">
     <div class="title"><a href="index.html"><img class="moving" src="logo3.gif"></a>
-    <id class="intro">Zine is a magazine focused on communicating, archiving, and researching overlooked voices through collaboration.</id></h1></div>
-    <div class="t"><div class="morning">Morning #0</div></t>
+    <id class="intro">Zine is a magazine focused on communicating, archiving, and researching overlooked voices through collaboration.</id></h1><hr></div>
+    <div class="t"><div class="morning">Morning #0</div><hr>
     <div class="father"><div class="grid">
-        <div class="content"><a class="colink" href="playlist.html">Morning playlist<br>by Eurico</a></div>
-        <div class="content"><a class="colink" href="coffcig.html">A Conversation <br>about morning cigarettes<br>and coffee</a></div>
-        <div class="content"><a class="colink" href="inga.html">Interview with <br>Inga Björk Bjarnadóttir</a></div>
-        <div class="content"><a class="colink" href="Edwin.html">Interview with<br>Edwin Sanders</a></div>
-        <div class="content"><a class="colink" href="cereal.html">Cereal Tasting</a></div>
-        <div class="1"><a class="colink" href="Desert.html">Desert Morning and<br>Afternoon Typefaces<br>by Skye McKinney</a></div>
-        <div class="1"><a class="colink" href="Brunch.html">Brunch<br>for a Leo</a></div>
-        <div class="1"><a class="colink" href="Haji.html">WOKE by Haji</a></div>
-        <div class="1"><a class="colink" href="felix-cor.html">Mornings<br>by Felix Salut</a></div>
-        <div class="1"><a class="colink" href="Conversation.html">Conversation<br>Piece</a></div>
-        <div class="1"><a class="colink" href="shift.html">Morning for <br>a nightshift doorman</a></div>
+        <div class="content"><a class="colink" href="playlist.html">Morning playlist<br>by Eurico</a></div><hr>
+        <div class="content"><a class="colink" href="coffcig.html">A Conversation <br>about morning cigarettes<br>and coffee</a></div><hr>
+        <div class="content"><a class="colink" href="inga.html">Interview with <br>Inga Björk Bjarnadóttir</a></div><hr>
+        <div class="content"><a class="colink" href="Edwin.html">Interview with<br>Edwin Sanders</a></div><hr>
+        <div class="content"><a class="colink" href="cereal.html">Cereal Tasting</a></div><hr>
+        <div class="1"><a class="colink" href="Desert.html">Desert Morning and<br>Afternoon Typefaces<br>by Skye McKinney</a></div><hr>
+        <div class="1"><a class="colink" href="Brunch.html">Brunch<br>for a Leo</a></div><hr>
+        <div class="1"><a class="colink" href="Haji.html">WOKE by Haji</a></div><hr>
+        <div class="1"><a class="colink" href="felix-cor.html">Mornings<br>by Felix Salut</a></div><hr>
+        <div class="1"><a class="colink" href="Conversation.html">Conversation<br>Piece</a></div><hr>
+        <div class="1"><a class="colink" href="shift.html">Morning for <br>a nightshift doorman</a></div><hr>
         </div>
     </div>
 
@@ -88,12 +88,35 @@ table {
         height:100vh;
         cursor: url('CS copy.png'), auto;
     }
+
+
+    @media screen and (max-width: 992px) {
+    body {
+        background-color: #62c2ea;
+    }
+}
+
+    hr {
+        display:none;
+        
+    }
+
+    @media screen and (max-width: 992px) {
+    hr {
+        display: block;
+        border-top: 2px solid #4d2c1a;
+
+    }
+    }
+
+
     .moving {
         display: inline-block;
         width: 60px;
         align-items: center;
         margin-top: 5px;
         margin-left: 5px;
+        mix-blend-mode: darken;
     }
 
     .title {
@@ -112,6 +135,15 @@ table {
         align-items: flex-end;
         font-size: 50px;
         margin-top: -10%;
+    }
+
+
+    @media screen and (max-width: 992px) {
+    .intro {
+        align-items: flex-end;
+        font-size: 25px;
+        margin-top: -10%;
+    }
     }
 
     .colink {
@@ -158,6 +190,15 @@ table {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         align-items: center;
+    }
+
+     
+
+    @media screen and (max-width: 992px) {
+    .grid {
+        display: block;
+        width: 100vw;
+    }
     }
 
     .header {

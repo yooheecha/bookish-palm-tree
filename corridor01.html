@@ -68,7 +68,6 @@ table {
 }
 
     body {
-        position: absolute;
         right: 0;
         top: 0;
         left: 0;
@@ -81,16 +80,19 @@ table {
 
     .wrap {
         background-image: url("BG-corridor.png");
-        text-align: center;
-        display: inline-block;
-        margin-left: auto;
-        margin-left: auto;
+        min-height: 100%;
+        min-width: 1024px;	
         width: 100%;
-        height: 100%;
-        align-items: flex-end;
-        animation: mymove 3s;
-
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-sizing: inherit;
     }
+
 
     a:hover {
         cursor: url('CS copy.png'), auto;
@@ -124,7 +126,7 @@ table {
         left: 0;
         bottom: 0;
         width: 100%;
-        color: black;
+        color: white;
         height: 7%;
 
     }
@@ -144,7 +146,7 @@ table {
 
     .blue {
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
     .blue:hover {
@@ -203,7 +205,7 @@ table {
         left: 0;
         right: 0;
         text-align: center;
-        animation: mymove 2s;
+        animation: mymove 3s;
     }
 
     .BG {

@@ -80,16 +80,19 @@ table {
 
     .wrap {
         background-image: url("BG-corridor2.png");
-        text-align: center;
-        display: inline-block;
-        margin-left: auto;
-        margin-left: auto;
+        min-height: 100%;
+        min-width: 1024px;	
         width: 100%;
-        height: 100%;
-        align-items: flex-end;
-        animation: mymove 2s;
-
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-sizing: inherit;
     }
+
 
     a:hover {
         cursor: url('CS copy.png'), auto;
