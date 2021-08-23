@@ -35,8 +35,9 @@
         <div class="1"><a class="colink" href="Haji.html">WOKE by Haji</a></div><hr>
         <div class="1"><a class="colink" href="felix-cor.html">Mornings<br>by Felix Salut</a></div><hr>
         <div class="1"><a class="colink" href="Conversation.html">Conversation<br>Piece</a></div><hr>
-        <div class="1"><a class="colink" href="shift.html">Morning for <br>a nightshift doorman</a></div><hr>
+        <div class="1" id="margin"><a class="colink" href="shift.html">Morning for <br>a nightshift doorman</a><hr></div>
         </div>
+
     </div>
     <script src="app.js"></script>
 
@@ -233,6 +234,7 @@ table {
     @media screen and (max-width: 992px) {
     .father {
         font-size: 3.5rem;
+        padding-bottom: 50px;
     }
     }
 
@@ -249,18 +251,24 @@ table {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         align-items: center;
+        margin-bottom: 100vh;
     }
 
      
 
     @media screen and (max-width: 992px) {
     .grid {
-        display: block;
+        display: inline-block;
         width: 100vw;
-        margin-bottom: 500px;
+        margin-bottom: 100vh;
     }
 
-}
+    #margin {
+        margin-bottom: 500vh;
+    }
+
+    }
+
 
     .header {
         text-decoration: underline;
